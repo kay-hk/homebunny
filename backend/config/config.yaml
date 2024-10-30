@@ -1,0 +1,22 @@
+RabbitMQ:
+  User: "username"
+  Password: "password"
+  Host: "localhost:5672"
+  VHost: "customers"
+
+Database:
+  Host: "localhost"
+  Port: "5432"
+  User: "username"
+  Password: "password"
+  DBName: "smart_home_assistant"
+
+Server:
+  Port: "8080"
+
+Producer:
+  Queue: "device_queue"
+
+Consumer:
+  Queue: "device_queue"
+  PrefetchCount: 1
